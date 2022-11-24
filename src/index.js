@@ -6,6 +6,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import App from './App';
+
 
 ReactDOM.render(<React.Fragment> 
                 <h1>Hello World!!</h1> <h2>Please Subscribe my channel </h2> <p>Plz Subscribe and like </p>
@@ -42,3 +44,25 @@ ReactDOM.render(<h1 contentEditable="true">My Name is Hamid Ali</h1>, document.g
 
 ReactDOM.render(<><img src={img1} alt='randonImg' /> <img src={img2} alt='randonImg' /><a href={link1} title="Coding Pixel" target="_"> <img src={img3} alt='randonImg' /> </a></> , document.getElementById('img'));
 
+// first year second month third date last time 2022,11,17, 20
+let curDate = new Date();
+curDate = curDate.getHours();
+let greething = "";
+const cssStyle = {};
+if (curDate >= 1 && curDate < 12){
+    greething = "Good Morning";
+    cssStyle.color = 'green';   
+} else if (curDate >= 12 && curDate < 19){
+    greething = "Good After Noon";
+    cssStyle.color = 'orange'; 
+} else {
+    greething = "Good Night";
+    cssStyle.color = 'black'; 
+}
+
+ReactDOM.render(<h1>Hello Sir, <span style={cssStyle}>{greething} </span></h1>, document.getElementById('gdmrng'));
+
+ReactDOM.render( <>
+                  <App/> 
+                
+                  </>, document.getElementById('component'));
