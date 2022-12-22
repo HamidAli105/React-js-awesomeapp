@@ -57,4 +57,14 @@ cssStyle.color = 'black';
         );
    }
 
+  const reactlearning = "React Learning";
+
+  function myname (){
+    let nme = "Hamid-Ali";
+    return nme;
+  }
+
    export default App;
+
+   export {reactlearning, myname};
+  
