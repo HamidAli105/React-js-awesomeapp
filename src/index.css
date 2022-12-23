@@ -14,6 +14,58 @@ code {
 .heading{
   color: green;
   text-align: center;
-  text-transform: capitalize;
+  text-transform: uppercase;
   font-weight: 700;
 }
+
+/* Netflix Card */
+.netflex-box {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px 20px;
+  background-color: hotpink;
+}
+
+.card img {
+  border-radius: 10px 10px 0px 0px;
+   
+}
+.card{
+  transition: transform .2s;
+}
+.card:hover {
+  transform: scale(1.2); 
+}
+.card_info {
+  padding: 10px 0px;
+  background-color: #fff;
+  margin-top: -4px;
+  border-radius: 0px 0px 6px 10px;
+}
+
+.card_category {
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-left: 12px;
+}
+
+.card_title {
+  padding-left: 12px;
+  font-size: 18px;
+  margin: 0;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+.card_link {
+  font-size: 16px;
+  padding-left: 12px;
+}
+.card_link button:hover {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+/* End Netflix Card */
